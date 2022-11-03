@@ -1,0 +1,149 @@
+:root {
+    --gold: #D5966C;
+    --almostBlack: #151515;
+    --darkGray: #444444;
+    --white: #FFFFFF;
+
+}
+
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+* img,
+.bg-black {
+    display: none;
+}
+
+/* h1 probably should delete, because we have img not the h1 */
+h1 {
+    font-size: 3.125rem;
+    font-weight: 900;
+    line-height: 2.75rem;
+    font-family: 'Big Shoulders Display';
+    ;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+    font-family: "Outfit";
+}
+
+
+/* Section One */
+.section-one>:not(:nth-child(2)) {
+    margin: 9% 1rem;
+
+
+}
+
+.img-mobile {
+    max-width: 375px;
+    display: block;
+}
+
+.section-one-logo-dark {
+    display: block;
+    width: 343px;
+}
+.moving-div p{
+    padding: 32px 0;
+}
+.btn-main {
+    width: 260px;
+    height: 72px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: linear-gradient(90deg, #151515 80%, #D5966C 80%);
+
+    color: var(--white);
+    text-transform: uppercase;
+
+}
+
+.btn-main:hover {
+    background: linear-gradient(90deg, #D5966C 80%, #151515 80%);
+}
+
+.btn-img {
+    display: block;
+    margin-right: -10px;
+}
+
+/* section two */
+.section-two {
+    margin-top: 120px;
+}
+
+.section-two > * {
+    margin-inline: 1rem;
+
+}
+
+.grid-mobile {
+    display: block;
+}
+
+.top-div {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.top-div h1 {
+    font-size: 3.125rem;
+    font-weight: 900;
+    line-height: 45px;
+    margin: 25px 0;
+
+}
+
+.top-div span {
+    padding-right: 120px;
+
+}
+.section-two div:not(:first-child){
+    margin-top: 16px;
+}
+.bottom-div{
+    background-color: var(--almostBlack);
+    color: var(--white);
+
+
+}
+.bottom-div h1 {
+    padding: 48px 24px;
+}
+.bottom-div p{
+    padding: 0 24px 47px;
+}
+
+/* footer */
+.footer{
+    background-color: var(--almostBlack);
+    color: var(--white);
+    margin-top: 120px;
+}
+.social , 
+.logo-light {
+    display: block;
+}
+.footer > *{
+    padding:38px 32px ;
+}
+.footer div{
+    display: flex;
+}
+.footer div > *{
+    padding-right: 20px;
+    cursor: pointer;
+
+}
