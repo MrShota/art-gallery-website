@@ -21,10 +21,6 @@
         margin-inline: 2.5rem;
     }
 
-    .section-two div:not(:first-child) {
-        /* margin-top: 0; */
-    }
-
     .section-two div {
         margin-top: 11px;
     }
@@ -58,8 +54,6 @@
     .grid-img {
         display: flex;
     }
-
-
 
     .grid-img *>* {
         padding-right: 11px;
