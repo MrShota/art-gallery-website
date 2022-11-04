@@ -1,0 +1,28 @@
+.btn-main {
+    width: 260px;
+    height: 72px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: linear-gradient(90deg,  #D5966C 20%, #151515 20%);
+
+    color: var(--white);
+    text-transform: uppercase;
+
+}
+
+.btn-main:hover {
+    background: linear-gradient(90deg, #151515 20%, #D5966C 20%);
+}
+.btn-img {
+    display: block;
+    margin-left: -10px;
+}
+.btn-text{
+    color: #ffffff;
+    margin-right: 20px;
+}
+.container a{
+    text-decoration: none;
+}

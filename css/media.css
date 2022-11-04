@@ -1,7 +1,6 @@
 
 @media(min-width:768px) {
-    .img-mobile,
-    .section-one-header {
+    .img-mobile {
         display: none;
     }
 
@@ -16,8 +15,15 @@
     }
 
     .moving-div p {
-        padding: 48px 0;
+        width: 350px;
     }
+    /* .btn-text{
+        margin-left: 40px;
+    }
+    .btn-img {
+        display: block;
+        margin-right: 20px;
+    } */
     .section-two div:not(:first-child){
         margin-top: 11px;
     }
@@ -137,7 +143,7 @@
     }
     
     .moving-div > p {
-        padding-right: 285px;
+        padding-right: 60px;
     }
     
     .section-two>* {
