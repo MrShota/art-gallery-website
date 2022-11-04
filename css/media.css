@@ -1,5 +1,7 @@
+
 @media(min-width:768px) {
-    .img-mobile {
+    .img-mobile,
+    .section-one-header {
         display: none;
     }
 
@@ -16,13 +18,15 @@
     .moving-div p {
         padding: 48px 0;
     }
-
+    .section-two div:not(:first-child){
+        margin-top: 11px;
+    }
     .section-two>* {
         margin-inline: 2.5rem;
     }
 
     .section-two div {
-        margin-top: 11px;
+        /* gap: 11px; */
     }
 
     .grid-mobile {
@@ -53,10 +57,7 @@
 
     .grid-img {
         display: flex;
-    }
-
-    .grid-img *>* {
-        padding-right: 11px;
+        padding-top: 11px;
     }
 
     .bottom-div {
@@ -84,9 +85,132 @@
         padding: 0 100px 0 65px;
     }
 
-    .logo-dark {
+    .logo-light {
         width: 110px;
         height: 40px;
+    }
+
+
+
+}
+
+@media(min-width:1439px) {
+   
+    .img-tablet,
+    .section-one-logo-dark {
+        display: none;
+    }
+
+    .img-desktop,
+    .bg-black,
+    .section-one-header {
+        display: block;
+    }
+    .section-one>:not(:nth-child(2)) {
+        margin:0;
+    }
+    .bg-black {
+        width: 450px;
+        height:800px ;
+        background-color: #151515;
+    }
+    .section-one{
+        display: flex;
+    }
+    .section-one-header{
+        font-size: 6rem;
+        font-weight: 900;
+        line-height: 88px;
+        color: #ffffff;
+
+        position: absolute;
+        top:189px ;
+        left: 168px;
+
+        mix-blend-mode:difference;
+    }
+
+    .moving-div {
+        position: absolute;
+        top: 192px;
+        left: 940px;
+    }
+    
+    .moving-div > p {
+        padding-right: 285px;
+    }
+    
+    .section-two>* {
+        margin-inline: 165px;
+    }
+    
+    .section-two div {
+        margin-top: 11px;
+    }
+    
+    .grid-tablet {
+        display: none;
+    }
+    
+    .grid-desktop {
+        display: block;
+    }
+    
+  
+    .top-div h1 {
+        margin: 0;
+        padding-right: 260px;
+        margin-top: 15%;
+    }
+    
+    .top-div p {
+        padding: 32px 260px 0 0;
+    }
+
+   
+    .section-two{
+        gap: 30px;
+    }
+
+    .grid-img {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .bottom-div {
+        width: 445px;
+        height:385px ;
+    }
+    
+    .bottom-div h1 {
+        font-size:3.75rem ;
+        font-weight: 900;
+        line-height: 60px;
+
+        padding: 65px 47px 0;
+    }
+    
+    .bottom-div p {
+        font-size:22px ;
+        font-weight: 300;
+        line-height: 32px;
+
+        padding: 32px 48px ;
+    }
+    
+    .footer {
+        display: flex;
+        padding: 80px 165px;
+    }
+    
+    .footer p {
+        padding: 0 300px 0 100px;
+    }
+
+        
+    .logo-light {
+        width: 160px;
+        height: 60px;
     }
 
 

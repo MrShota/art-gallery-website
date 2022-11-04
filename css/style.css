@@ -40,8 +40,6 @@ p {
 /* Section One */
 .section-one>:not(:nth-child(2)) {
     margin: 9% 1rem;
-
-
 }
 
 .img-mobile {
