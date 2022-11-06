@@ -1,11 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Kumbh+Sans:wght@400;700&family=Monoton&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Outfit:wght@300&family=Plus+Jakarta+Sans:wght@500;700;800&family=Poppins:wght@300&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --gold: #D5966C;
+    --almostBlack: #151515;
+    --darkGray: #444444;
+    --white: #FFFFFF;
+
+}
+
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.maps {
+    display: none;
+}
+
+/* h1 probably should delete, because we have img not the h1 */
+h1,
+h2 {
+    font-size: 3.125rem;
+    font-weight: 900;
+    line-height: 2.75rem;
+    font-family: 'Big Shoulders Display';
+    ;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--gold);
+
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+    font-family: "Outfit";
+}
+
+/* btn style  */
 .btn-main {
-    width: 260px;
+    width: 264px;
     height: 72px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    background: linear-gradient(90deg,  #D5966C 20%, #151515 20%);
+    background: linear-gradient(90deg, #D5966C 20%, #151515 20%);
 
     color: var(--white);
     text-transform: uppercase;
@@ -15,14 +64,183 @@
 .btn-main:hover {
     background: linear-gradient(90deg, #151515 20%, #D5966C 20%);
 }
+
 .btn-img {
     display: block;
     margin-left: -10px;
 }
-.btn-text{
+
+.btn-text {
     color: #ffffff;
     margin-right: 20px;
 }
-.container a{
+
+.container a {
     text-decoration: none;
+
 }
+/* mobile  */
+.map-div {
+    max-width: 375px;
+}
+
+.mobile-map {
+    display: block;
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--almostBlack);
+}
+
+.info>* {
+    padding-inline: 16px;
+}
+
+.info h1 {
+    padding: 48px 0px;
+}
+
+.info p:last-child {
+    padding: 20px 20px 56px 0px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 32px;
+    background-color: var(--gold);
+}
+
+.footer h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 1.5rem;
+}
+
+.footer p,
+.footer div {
+    padding-top: 38px;
+}
+
+.social>* {
+    padding-right: 20px;
+}
+
+
+/* tablet */
+@media (min-width:768px) {
+
+    .mobile-map {
+        display: none;
+    }
+
+    .tablet-map {
+        display: block;
+    }
+
+    .btn {
+        padding-left: 39px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info>* {
+        padding-inline: 38px;
+    }
+
+    .info h1,
+    h2 {
+        padding-top: 88px;
+    }
+
+    .info p:last-child {
+        padding: 20px 10px 80px 0px;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer>* {
+        padding-top: 56px;
+    }
+
+    .footer h1 {
+        width: 450px;
+    }
+
+    .footer p {
+        padding-left: 50px;
+        padding-right: 100px;
+    }
+
+    .social {
+        display: flex;
+    }
+
+}
+
+
+@media (min-width:1440px) {
+   
+
+    .tablet-map {
+        display: none;
+        object-fit:fill;
+    
+    }
+
+    .desktop-map {
+        display: block;
+    }
+
+    .btn {
+        padding-left: 156px;
+    }
+
+    .info>* {
+        padding-inline: 0;
+    }
+
+    .info h1 {
+        padding: 104px 220px 304px 165px;
+    }
+
+    .info h2 {
+        padding-top: 104px;
+    }
+
+    .info p:last-child {
+        padding: 20px 440px 80px 0px;
+    }
+
+    .footer h1 {
+        padding: 80px 0 106px 165px;
+        
+        /* padding: 80px 140px 106px 165px; */
+    }
+
+    .footer p {
+        padding: 80px 200px 80px 140px;
+    }
+
+    .social a{
+        padding-top: 40px;
+    }
+   
+}
+
+
+
