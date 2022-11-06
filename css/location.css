@@ -133,6 +133,12 @@ p {
 .social>* {
     padding-right: 20px;
 }
+#icon{
+    filter: invert(1);
+}
+#icon:hover{
+    filter: var(--white);
+}
 
 
 /* tablet */

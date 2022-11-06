@@ -218,6 +218,10 @@
         width: 160px;
         height: 60px;
     }
+    
+    .social-icon:hover{
+            filter: invert(58%) sepia(54%) saturate(336%) hue-rotate(341deg) brightness(100%) contrast(89%);
+    }
 
 
 
