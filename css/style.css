@@ -39,6 +39,13 @@ p {
 
 
 /* Section One */
+.btn-img,
+.grid-mobile,
+.social-icon , 
+.logo-light {
+    display: block;
+}
+
 .section-one>:not(:nth-child(2)) {
     margin: 9% 1rem;
 }
@@ -55,9 +62,7 @@ p {
 .moving-div p{
     padding: 32px 0;
 }
-.btn-text{
-    margin-left: 40px;
-}
+
 .moving-div a{
     text-decoration: none;
 }
@@ -68,7 +73,8 @@ p {
     justify-content: space-around;
     align-items: center;
 
-    background: linear-gradient(90deg, #151515 80%, #D5966C 80%);
+    background: 
+    linear-gradient(90deg, #151515 80%, #D5966C 80%);
 
     color: var(--white);
     text-transform: uppercase;
@@ -76,13 +82,16 @@ p {
 }
 
 .btn-main:hover {
-    background: linear-gradient(90deg, #D5966C 80%, #151515 80%);
+    background: 
+    linear-gradient(90deg, #D5966C 80%,#151515 80%);
+}
+.btn-text{
+    margin-left: 10px;
+}
+.btn-img{
+    margin-left: 20px;
 }
 
-.btn-img {
-    display: block;
-    margin-right: 20px;
-}
 
 /* section two */
 .section-two {
@@ -94,9 +103,7 @@ p {
 
 }
 
-.grid-mobile {
-    display: block;
-}
+
 
 .top-div {
     display: flex;
@@ -137,12 +144,30 @@ p {
     color: var(--white);
     margin-top: 120px;
 }
-.social-icon , 
-.logo-light {
-    display: block;
+
+.footer{
+    width: 100%;
 }
 .footer > *{
-    padding:38px 32px ;
+    padding-inline: 32px;
+}
+.logo-light{
+    padding-top: 48px ;
+}
+.footer p{
+    font-size: 1rem;
+    padding-top: 38px;
+}
+.icons{
+    display: flex;
+}
+.icons > *{
+    
+    padding:38px 20px 48px 0;
+}
+
+/* .footer > *{
+    padding:38px 10px ;
 }
 .footer div{
     display: flex;
@@ -151,4 +176,4 @@ p {
     padding-right: 20px;
     cursor: pointer;
 
-}
+} */
